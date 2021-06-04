@@ -26,7 +26,7 @@ function draw(){
 }
 
 async function getBackgroundImg(){
-    var timeReceived = await fetch("https://worldtimeapi.org/api/timezone/Asia/Kolkata");
+    var timeReceived = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
 
     var timeReceivedJSON = await timeReceived.json();
     var dateTime = timeReceivedJSON.datetime;
